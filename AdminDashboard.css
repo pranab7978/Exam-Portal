@@ -1,0 +1,51 @@
+/* AdminDashboard.css */
+
+/* General Background */
+.dashboard-wrapper {
+    min-height: calc(100vh - 80px);
+    background-color: #f8f9fa; /* Light grey background */
+    background-image: radial-gradient(#e9ecef 1px, transparent 1px);
+    background-size: 20px 20px; /* Subtle dot pattern */
+}
+
+/* Card Styling */
+.dashboard-card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 16px !important;
+    border: none !important;
+    background: white;
+}
+
+/* Hover Effect: Lift up */
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Icon Circle Styling */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover .icon-circle {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Custom Color Utilities for Icons */
+.bg-light-primary { background-color: rgba(13, 110, 253, 0.1); }
+.bg-light-success { background-color: rgba(25, 135, 84, 0.1); }
+.bg-light-warning { background-color: rgba(255, 193, 7, 0.1); }
+.bg-light-info { background-color: rgba(13, 202, 240, 0.1); }
+
+/* Typography */
+.display-4 {
+    color: #2c3e50;
+    letter-spacing: -1px;
+}
